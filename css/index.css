@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    font-family: Poppins;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: pink;
+}
+a:active {
+    color: black;
+}

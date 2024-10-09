@@ -1,3 +1,12 @@
+html {
+    --color-cashew: #FAF1E5;
+    --color-carrot: #FF7009;
+    --color-kale: #003D29;
+
+    --background-color: var(--color-cashew);
+    --foreground-color: var(--color-kale);
+}
+
 body {
     margin: 0;
     background-color: var(--background-color);
@@ -9,13 +18,15 @@ body {
     word-wrap: break-word;
 }
 
-h1 {
-    text-align: center;
+.logo {
+    width: 40%;
 }
 
 .title {
-    text-align: center;
-    font-weight: bold;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
 }
 
 .link {

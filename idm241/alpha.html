@@ -4,97 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Description</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/alpha.css">
 </head>
 
 <body>
-    <h1>Alpha Description</h1>
 
-    <p class="title">"Add" button</p>
+
+        <img class="logo" src="../images/Instacart-Logo-Kale.png" alt="Instacart logo">
+        <h1>Alpha Description</h1>
+
+    <!-- <p class="title">"Add" button</p> -->
 
     <p class="link"> 
         <a href="https://www.instacart.com/store/sephora/storefront" target="_blank">Link to Instacart</a>
     </p>
         
-
-    <div>
-        <h3>TRIGGER</h3>
-
-        <ul>
-            <li>Hover ON</li>
-            <li>Hover OFF</li>
-            <li>Click "Add to cart" button</li>
-        </ul>
-    </div>
+    <div class="container">
+        <div class="card">
+            <h3>TRIGGER</h3>
     
-    <div>
-        <h3>RULES</h3>
-
-    <ul>
-        <p>Hover ON
+            <p>"Add" button</p>
             <ul>
-                <li>Cursor changes to finger</li>
-                <li>"Add" changes to "Add to cart</li>
-                <li>Filled background color changes to darker green</li>
+                <li>Hover ON</li>
+                <li>Hover OFF</li>
+                <li>Click "Add to cart" button</li>
             </ul>
-        </p>
-
-        <p>Hover OFF
-            <ul>
-                <li>Cursor changes back to pointer</li>
-                <li>"Add to cart" changes back to "Add"</li>
-                <li>Filled background color changes back to lighter green </li>
-            </ul>
-        </p>
+        </div>
         
-        <p>Click "Add to cart" button
-            <ul>
-                <li>Button changes to "1 ct" with "Trash" and "Plus" icon button </li>
-            </ul>
-        </p>
+        <div class="card">
+            <h3>RULES</h3>
+
+            <p>"Add" button</p>
+    
+            <p>Hover ON
+                <ul>
+                    <li>Cursor changes to finger</li>
+                    <li>Button width expands</li>
+                    <li>"Add" changes to "Add to cart"</li>
+                    <li>Filled background color changes to darker green</li>
+                </ul>
+            </p>
+    
+            <p>Hover OFF
+                <ul>
+                    <li>Cursor changes back to pointer</li>
+                    <li>Button width changes back to initial size</li>
+                    <li>"Add to cart" changes back to "Add"</li>
+                    <li>Filled background color changes back to lighter green </li>
+
+                </ul>
+            </p>
             
+            <p>Click "Add to cart" button
+                <ul>
+                    <li>Button changes to "1 ct"</li>
+                    <li>Plus icon moves to the right</li>
+                    <li>Trash icon appears on the left</li>
+                </ul>
+            </p>
+                
+        </div>
+    
+    
+        <div class="card">
+            <h3>FEEDBACK</h3>
 
-    </ul>
-    </div>
+            <p>"Add" button</p>
+    
+            <p>Hover ON
+                <ul>
+                    <li>Cursor changes to finger</li>
+                    <li>Button width expands</li>
+                    <li>"Add" changes to "Add to cart"</li>
+                    <li>Filled background color changes to darker green</li>
+                </ul>
+            </p>
+    
+            <p>Hover OFF
+                <ul>
+                    <li>Cursor changes back to pointer</li>
+                    <li>Button width changes back to initial size</li>
+                    <li>"Add to cart" changes back to "Add"</li>
+                    <li>Filled background color changes back to lighter green </li>
 
-
-    <div>
-        <h3>FEEDBACK</h3>
-
-    <ul>
-        <p>Hover ON
-            <ul>
-                <li>Cursor changes to finger</li>
-                <li>"Add" changes to "Add to cart</li>
-                <li>Filled background color changes to darker green</li>
-            </ul>
-        </p>
-
-        <p>Hover OFF
-            <ul>
-                <li>Cursor changes back to pointer</li>
-                <li>"Add to cart" changes back to "Add"</li>
-                <li>Filled background color changes back to lighter green </li>
-            </ul>
-        </p>
-        
-        <p>Click "Add to cart" button
-            <ul>
-                <li>Button changes to "1 ct" with "Trash" and "Plus" icon button </li>
-            </ul>
-        </p>
-
-        <p>A database record is created for the added item</p>
+                </ul>
+            </p>
             
+            <p>Click "Add to cart" button
+                <ul>
+                    <li>Button changes to "1 ct"</li>
+                    <li>Plus icon moves to the right</li>
+                    <li>Trash icon appears on the left</li>
+                </ul>
+            </p>
+    
+            <p>A database record is created for the added item</p>
+                
+        </div>
+    
+        <div class="card">
+            <h3>LOOPS &amp; MODES</h3>
 
-    </ul>
+            <p>"Add" button</p>
+
+            <p style="font-weight: bold; color: #ff7009;">Loops</p>
+            
+            <ul>
+                <li>None</li>
+            </ul>
+
+            <p style="font-weight: bold; color: #ff7009;">Modes</p>
+
+            <ul>
+                <li>When click on "Add to cart" button, there are 2 addition icons appear</li>
+            </ul>
+
+
+        </div>
     </div>
 
-    <div>
-        <h3>LOOPS &amp; MODES</h3>
-
-    <p>None</p>
-    </div>
+    
 
     <div class="image">
         <img src="../images/microinteraction.gif" alt="Add to cart animation">
