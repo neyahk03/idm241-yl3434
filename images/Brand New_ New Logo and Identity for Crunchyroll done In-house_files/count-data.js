@@ -1,0 +1,5 @@
+var DISQUSWIDGETS;
+
+if (typeof DISQUSWIDGETS != 'undefined') {
+    DISQUSWIDGETS.displayCount({"text":{"and":"and","comments":{"zero":"Comments (0)<span style=\"display:none;\">","multiple":"Comments ({num})<span style=\"display:none;\">","one":"Comments (1) <span style=\"display:none;\">"}},"counts":[{"id":"295454 https:\/\/www.underconsideration.com\/brandnew\/?p=295454","comments":65},{"id":"292763 https:\/\/www.underconsideration.com\/brandnew\/?p=292763","comments":53},{"id":"292905 https:\/\/www.underconsideration.com\/brandnew\/?p=292905","comments":48},{"id":"296931 https:\/\/www.underconsideration.com\/brandnew\/?p=296931","comments":26},{"id":"292090 https:\/\/www.underconsideration.com\/brandnew\/?p=292090","comments":38},{"id":"293040 https:\/\/www.underconsideration.com\/brandnew\/?p=293040","comments":29},{"id":"292702 https:\/\/www.underconsideration.com\/brandnew\/?p=292702","comments":44}]});
+}
