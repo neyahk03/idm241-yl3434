@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 
 html {
     --color-cashew: #FAF1E5;
@@ -6,7 +8,7 @@ html {
     --color-kale: #003D29;
     --color-lime: #0aad0a; 
 
-    --background-color: #111213;
+    --background-color: #27292b;
     --foreground-color: var(--color-kale);
 }
 
@@ -76,91 +78,6 @@ a:hover {
 
 /* flip card microinteraction */
 
-.poster-container {
-    perspective: 1000px; /* Provides a 3D space for the card */
-
-    display: flex;
-    justify-content: center;
-    margin: 5rem;
-}
-
-.poster {
-    width: 300px;
-    height: 467px;
-    transition: transform 0.6s ease, box-shadow 0.3s ease; /* Smooth flip and hover effects */
-    transform-style: preserve-3d;
-    position: relative;
-    cursor: pointer; /* Indicates it's clickable */
-    border-radius: 15px;
-}
-
-.poster:hover {
-    transform: scale(1.1); /* Increase size by 10% on hover */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adds a shadow effect on hover */
-}
-
-.poster-front, .poster-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-
-    border-radius: 15px;
-}
-
-.poster-front {
-    background-color: black; /* Front side color */
-    border-radius: 15px;
-    overflow: hidden;
-
-    img {
-        width: 100%;
-        height: 85%;
-    }
-/* 
-    p {
-        padding: 0 1rem;
-    } */
-}
-
-.name {
-    color: white;
-    padding: 10px;
-}
-
-.poster-back {
-    background-color: black; /* Back side color */
-    transform: rotateY(180deg); /* Start flipped */
-
-    padding: 1rem;
-
-    div {
-        .icon {
-        width: 12px;
-    }
-    }
-
-    p {
-        margin-bottom: 3px;
-    }
-
-    p:first-child {
-        margin-bottom: 12px;
-    }
-
-    p:last-child {
-        margin-top: 12px;
-    }
-}
-
-.poster.flipped {
-    transform: rotateY(180deg); /* Maintain rotation for flip */
-}
-
-.poster.flipped:hover {
-    transform: rotateY(180deg) scale(1.1); /* Apply hover effect to back side when flipped */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adds the shadow effect on hover */
-}
 
 
 @media screen and (max-width: 900px) {

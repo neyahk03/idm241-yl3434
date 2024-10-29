@@ -42,11 +42,14 @@ h2 {
 a {
     color: white;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 a:hover {
     color: var(--color-orange);
     text-decoration: underline;
+    text-align: center;
 }
 
 .card {
@@ -253,15 +256,14 @@ button {
     }
 }
 
-/* .image {
+.image {
     text-align: center;
 
     video {
         border: 3px solid var(--color-orange);
         border-radius: 20px;
-        width: 50vw;
     }
-} */
+}
 
 @media screen and (max-width: 900px) {
     .container {
@@ -274,9 +276,9 @@ button {
         grid-template-columns: 1fr;
     }
 
-    /* .image {
+    .image {
         video {
             width: 90vw;
         }
-    } */
+    }
 }
