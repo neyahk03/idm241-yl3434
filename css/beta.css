@@ -35,10 +35,6 @@ h2 {
     color: #fff;
 }
 
-.link {
-    text-align: center;
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -50,6 +46,13 @@ a:hover {
     color: var(--color-orange);
     text-decoration: underline;
     text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
 .card {
@@ -131,130 +134,8 @@ button {
     color: #fff;
     cursor: pointer;
 }
-/* end card flip */
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-gap: 20px;
-    padding: 20px;
-}
-
-.example {
-    /* border: 1px solid pink; */
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 300px;
-    height: 467px;
-    position: relative;
-    display: flex;
-
-    a {
-        color: white;
-    }
-
-    p {
-        font-size: 0.875rem;
-        margin-top: 0;
-    }
-
-}
-
-
-.pic {
-    /* border: 1px solid green; */
-    width: 300px;
-    height: 467px;
-    overflow: hidden;
-    position: absolute;
-
-    img {
-        display: block;
-        /* object-fit: cover; */
-        width: 300px; 
-        height: 85%;
-    }
-}
-
-.pic-hover {
-    width: 300px;
-    height: 467px;
-    overflow: hidden;
-    background-color: black;
-    opacity: 0%;
-    z-index: 20;
-    position: absolute;
-
-    display: flex;
-
-    div {
-        padding: 15px;
-
-        .icon {
-            width: 12px;
-        }
-    }
-
-    p {
-        margin-bottom: 3px;
-    }
-
-    p:first-child{
-        margin-bottom: 12px;
-    }
-
-    p:last-child{
-        margin-top: 12px;
-    }
-}
-
-.button {
-    opacity: 0;
-    /* width: 300px; */
-    height: 25px;
-    position: absolute;
-    z-index: 30;
-    /* border: 1px solid pink; */
-    align-self: flex-end;
-    padding: 15px;
-
-    a {
-        text-decoration: none;
-    }
-
-    img {
-        height: 25px;
-        color: orange;
-        margin-right: 10px;
-    }
-}
-
-.name {
-    color: white;
-    padding: 10px;
-}
-
-
-.example:hover {
-
-    img {
-        height: 100%;
-        z-index: 1;
-    }
-    
-    .name {
-        display: none;
-    }
-
-    .pic-hover {
-        opacity: 85%;
-    }
-
-    .button {
-        opacity: 100%;
-    }
-}
+/* image/video format */
 
 .image {
     text-align: center;
@@ -269,6 +150,12 @@ button {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .image {
+        video {
+            width: 70vw;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -278,7 +165,7 @@ button {
 
     .image {
         video {
-            width: 90vw;
+            width: 85vw;
         }
     }
 }
