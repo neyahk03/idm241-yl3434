@@ -18,14 +18,17 @@
         <div class="poster" id="flip-card">
     
             <div class="poster-front">
+
                 <div class="pic">
                     <img src="../../images/one-piece.jpg" alt="one-piece poster">
                 </div>
+
                 <div class="name">
                     <p>One Piece</p>
-                    <p style="margin-bottom: 0; opacity: 80%;">Sub | Dub</p>
+                    <p style="margin-bottom: 0; opacity: 80%; font-size: 12px;">Sub | Dub</p>
     
                 </div>
+
             </div>
     
         <div class="poster-back">
@@ -40,6 +43,12 @@
                 </p>
     
             </div>
+
+            <div class="button-icon">
+                <img id="play" src="../../images/play-button-outline.png" alt="play button">
+                <img id="bookmark" src="../../images/bookmark-2.svg" alt="bookmark-icon">
+                <img id="plus" src="../../images/plus-icon.svg" alt="plus icon">
+            </div>
         </div>
     
         </div>
@@ -50,42 +59,65 @@
     <div class="card">
         <h3>TRIGGERS</h3>
 
-        <p>Movie Image</p>
+        <p>Movie Poster - Default</p>
         <ul>
             <li>Hover ON</li>
             <li>Hover OFF</li>
-            <li>Click on</li>
+            <li>Click ON</li>
+        </ul>
+
+        <p>Movie Poster - Active</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Click ON</li>
+        </ul>
+
+        <p>Play Button</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Mouse DOWN</li>
+            <li>Mouse UP</li>
         </ul>
     </div>
     
     <div class="card">
         <h3>RULES</h3>
-
-        <p>Hover ON
-            <ul>
-                <li>Cursor changes to finger</li>
-                <li>Background image expands</li>
-                <li>Movie title disappears</li>
-                <li>Background changes to color black with 85% opacity</li>
-                <li>Movie name, rating and description appear</li>
-                <li>"Play", "Save" and "Add to list" button appear on the bottom left</li>
-                <li>After 3 seconds delay, the name of the movie appears as tagline</li>
-            </ul>
-        </p>
-
-        <p>Hover OFF
-            <ul>
-                <li>Cursor changes back to pointer</li>
-                <li>Background changes back to movie image</li>
-                <li>Movie title appears below movie image</li>
-            </ul>
-        </p>
         
-        <p>Click on
+        <p>Movie Poster - Default
             <ul>
-                <li>Redirects to that movie page</li>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips to the back side</li>
             </ul>
         </p>
+
+        <p>Movie Poster - Active
+            <ul>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips back to the front side</li>
+            </ul>
+        </p>
+
+        <p>Play Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - rediects to first episode of the movie</li>
+
+        </ul>
+
+
+        
+
+        
             
     </div>
 
@@ -93,47 +125,41 @@
     <div class="card">
         <h3>FEEDBACK</h3>
 
-        <p>Hover ON
+        <p>Movie Poster - Default
             <ul>
-                <li>Cursor changes to finger</li>
-                <li>Background image expands</li>
-                <li>Movie title disappears</li>
-                <li>Background changes to color black with 85% opacity</li>
-                <li>Movie name, rating and description appear</li>
-                <li>"Play", "Save" and "Add to list" button appear on the bottom left</li>
-                <li>After 3 seconds delay, the name of the movie appears as tagline</li>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips to the back side</li>
             </ul>
         </p>
 
-        <p>Hover OFF
+        <p>Movie Poster - Active
             <ul>
-                <li>Cursor changes back to pointer</li>
-                <li>Background changes back to movie image</li>
-                <li>Movie title appears below movie image</li>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips back to the front side</li>
             </ul>
         </p>
+
+        <p>Play Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - rediects to first episode of the movie</li>
+
+        </ul>
         
-        <p>Click on
-            <ul>
-                <li>Redirects to that movie page</li>
-            </ul>
-        </p>
     </div>
 
     <div class="card">
         <h3>LOOPS &amp; MODES</h3>
 
-        <p style="font-weight: bold;">Loops</p>
-            
-            <ul>
-                <li>None</li>
-            </ul>
-
-            <p style="font-weight: bold;">Modes</p>
-
-            <ul>
-                <li>When hover movie image, there are 3 addition icons appear</li>
-            </ul>
+        <ul>None</ul>
 
 
     </div>

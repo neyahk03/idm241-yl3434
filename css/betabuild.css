@@ -1,3 +1,21 @@
+@font-face {
+    font-family: poppins-light;
+    src: url(../fonts/poppins-light-webfont.woff) format(woff),
+        url(../fonts/poppins-light-webfont.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../fonts/poppins-regular-webfont.woff) format(woff),
+        url(../fonts/poppins-regular-webfont.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/poppins-bold-webfont.woff) format(woff),
+        url(../fonts/poppins-bold-webfont.woff2) format(woff2);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -15,7 +33,7 @@ html {
 body {
     background-color: var(--background-color);
     color: #fff;
-    font-family: Poppins;
+    font-family: poppins-regular;
     margin: 0;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -35,6 +53,7 @@ img {
 h2 {
     text-align: center;
     color: #fff;
+    font-family: poppins-bold;
 }
 
 .link {
@@ -51,6 +70,13 @@ a:hover {
     text-decoration: underline;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
 .card {
     border: 3px solid var(--color-orange);
     /* margin: 10px; */
@@ -61,18 +87,26 @@ a:hover {
     h3 {
         color: var(--color-carrot);
         margin-top: 0;
+        font-family: poppins-bold;
+    }
+
+    p {
+        font-family: poppins-regular;
+        margin-bottom: 0;
+        color: var(--color-orange)
+    }
+
+    ul {
+        margin-top: 0.5rem;
+    }
+
+    strong {
+        text-decoration: underline;
     }
 }
 
 .card:hover {
     box-shadow: 0 4px 8px 0 var(--color-orange), 0 6px 20px 0 var(--color-orange);
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-gap: 20px;
-    padding: 20px;
 }
 
 

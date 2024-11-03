@@ -1,3 +1,21 @@
+@font-face {
+    font-family: poppins-light;
+    src: url(../fonts/poppins-light-webfont.woff) format(woff),
+        url(../fonts/poppins-light-webfont.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../fonts/poppins-regular-webfont.woff) format(woff),
+        url(../fonts/poppins-regular-webfont.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/poppins-bold-webfont.woff) format(woff),
+        url(../fonts/poppins-bold-webfont.woff2) format(woff2);
+}
+
 .poster-container {
     perspective: 1000px; /* Provides a 3D space for the card */
     display: flex;
@@ -36,6 +54,8 @@
 .poster-front {
     background-color: black; /* Front side color */
     padding: 0; /* No padding on front */
+
+    justify-content: space-between;
 }
 
 .poster-front .pic {
@@ -52,15 +72,16 @@
 
 .name {
     color: white;
-    margin: 0;
     flex-direction: column;
     align-items: center;
-    padding-top: 0.5rem;
+    padding: 15px;
 
     p {
         margin: 0;
-        padding-left: 1rem;
+        /* padding-left: 1rem; */
     }
+
+
 }
 
 .poster-back {
@@ -68,24 +89,44 @@
     transform: rotateY(180deg); /* Start flipped */
     font-size: 0.9rem;
     padding: 1rem;
+
+    justify-content: space-between;
 }
 
 .poster-back .icon {
     width: 12px;
 }
 
+
 /* Title and description text */
 .poster-back p {
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
+    margin: 1px 0;
+    font-family: poppins-light;
+    font-size: 12px;
 }
 
-/* Margins for the first and last paragraph */
 .poster-back p:first-child {
     margin-bottom: 12px;
+    font-family: poppins-bold;
+    font-size: 1rem;
+
 }
 
 .poster-back p:last-child {
     margin-top: 12px;
+    font-size: 15px;
+}
+
+.poster-back .button-icon img {
+    width: 25px;
+    margin: 0;
+}
+
+.button-icon {
+    display: flex;
+    gap: 0.5rem;
+
 }
 
 .poster.flipped {
@@ -96,3 +137,29 @@
     transform: rotateY(180deg) scale(1.1); /* Apply hover effect to back side when flipped */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adds the shadow effect on hover */
 }
+
+
+/* animate button */
+
+#play {
+    transition: transform 0.2s ease;
+}
+
+#play:hover {
+    transform: scale(1.2);
+}
+
+#play:active {
+    transform: scale(1);
+}
+
+#bookmark:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+#plus:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
