@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Build</title>
+    <link rel="stylesheet" href="../../css/final-built.css">
+    <link rel="stylesheet" href="../../css/final-build-2.css">
+</head>
+
+<body>
+    <img class="logo" src="../../images/crunchyroll-logo.png" alt="Crunchyroll logo">
+    <h2>Final Build</h2>
+
+
+
+    <div class="poster-container">
+        <div class="poster" id="flip-card">
+    
+            <div class="poster-front">
+
+                <div class="pic">
+                    <img src="../../images/one-piece.jpg" alt="one-piece poster">
+                </div>
+
+                <div class="name">
+                    <p>One Piece</p>
+                    <p style="margin-bottom: 0; opacity: 80%; font-size: 12px;">Sub | Dub</p>
+    
+                </div>
+
+            </div>
+    
+        <div class="poster-back">
+            <div>
+                <p>One Piece</p>
+
+                <p>4.9 <img class="icon" src="../../images/star-icon.png" alt="star icon"> (540.3K)</p>
+                <p>25 Seasons</p>
+                <p>1,351 Episodes</p>
+    
+                <p>Embark on a voyage of a lifetime with One Piece. The epic anime series created by renowned mangaka Eiichiro Oda is a global phenomenon, captivating the hearts of fans across generations throughout its 25-year span. This thrilling high seas adventure is...
+                </p>
+    
+            </div>
+
+            <div class="button-icon">
+                <img id="play" src="../../images/play-button-outline.png" alt="play button">
+                <img id="bookmark" src="../../images/bookmark-2.svg" alt="bookmark-icon">
+                <img id="plus" src="../../images/plus-icon.svg" alt="plus icon">
+            </div>
+        </div>
+    
+        </div>
+
+        <div class="model-box">
+            <div class="close-button-box">
+                <img id="close" src="../../images/cancel-icon.png" alt="close button">
+            </div>
+            
+            <h3>Add to list</h3>
+
+            <div class="form">
+                <input type="text" id="create-list" name="create-list" placeholder="Create New List">
+
+            </div>
+
+            <div class="add-container">
+                <div class="create">CREATE LIST</div>
+                <div class="cancel">CANCEL</div>
+            </div>
+        </div>
+    </div>
+
+    
+<div class="container">
+    <div class="card">
+        <h3>TRIGGERS</h3>
+
+        <p>Movie Tile - Default</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Click ON</li>
+        </ul>
+
+        <p>Movie Tile - Active</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Click ON</li>
+        </ul>
+
+        <p>Play Button</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Mouse DOWN</li>
+            <li>Mouse UP</li>
+        </ul>
+
+        <p>Bookmark Button - Defult</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Mouse DOWN</li>
+            <li>Mouse UP</li>
+        </ul>
+
+        <p>Bookmark Button - Active</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Mouse DOWN</li>
+            <li>Mouse UP</li>
+        </ul>
+
+        <p>Add To List Button</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Mouse DOWN</li>
+            <li>Mouse UP</li>
+        </ul>
+
+        <p>Close Button</p>
+        <ul>
+            <li>Hover ON</li>
+            <li>Hover OFF</li>
+            <li>Click ON</li>
+
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h3>RULES</h3>
+        
+        <p>Movie Tile - Default
+            <ul>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips to the back side</li>
+            </ul>
+        </p>
+
+        <p>Movie Tile - Active
+            <ul>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips back to the front side</li>
+            </ul>
+        </p>
+
+        <p>Play Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - rediects to first episode of the movie</li>
+
+        </ul>
+
+        <p>Bookmark Button - Default</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - icon outline fills in with the color white
+            </li>
+        </ul>
+
+        <p>Bookmark Button - Active</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - Icon filled-in to icon changes back to outline
+            </li>
+        </ul>
+
+        <p>Add To List Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 20%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li>
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - opens model box</li>
+        </ul>
+
+        <p>Close Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - cursor changes to finger</li>
+            <li>Button scales up by 20%</li>
+            <li><strong>Hover OFF</strong> - curdor changes back to pointer</li>
+            <li>Button returns to its original size</li>
+            <li><strong>Click ON</strong> - closes model box</li>
+        </ul>
+
+    </div>
+
+
+    <div class="card">
+        <h3>FEEDBACK</h3>
+
+        <p>Movie Tile - Default
+            <ul>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips to the back side</li>
+            </ul>
+        </p>
+
+        <p>Movie Tile - Active
+            <ul>
+                <li><strong>Hover ON</strong> - cursor changes to finger </li>
+                <li>The card scales up by 10% and the shadow intensity increases</li>
+                <li><strong>Hover OFF</strong> - cursor changes back to pointer</li>
+                <li>The card returns to its orignial size and shadow</li>
+                <li><strong>Click ON</strong> - card flips back to the front side</li>
+            </ul>
+        </p>
+
+        <p>Play Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - rediects to first episode of the movie</li>
+
+        </ul>
+
+        <p>Bookmark Button - Default</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - icon outline fills in with the color white
+            </li>
+        </ul>
+
+        <p>Bookmark Button - Active</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 10%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li> 
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - Icon filled-in to icon changes back to outline
+            </li>
+        </ul>
+
+        <p>Add To List Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - button scales up by 20%</li>
+            <li><strong>Hover OFF</strong> - button returns to its original size</li>
+            <li><strong>Mouse DOWN</strong> - button scales down to its original size</li>
+            <li><strong>Mouse UP</strong> - opens model box</li>
+        </ul>
+
+        <p>Close Button</p>
+        <ul>
+            <li><strong>Hover ON</strong> - cursor changes to finger</li>
+            <li>Button scales up by 20%</li>
+            <li><strong>Hover OFF</strong> - curdor changes back to pointer</li>
+            <li>Button returns to its original size</li>
+            <li><strong>Click ON</strong> - closes model box</li>
+        </ul>
+        
+    </div>
+
+    <div class="card">
+        <h3>LOOPS &amp; MODES</h3>
+
+        <p>Loops</p>
+        <ul>None</ul>
+
+        <p>Modes</p>
+        <ul>Model box opens when Add to list button is clicked</ul>
+
+
+    </div>
+</div>
+
+
+
+<!-- <div class="image">
+    <video src="../../images/crunchyroll-movie-image.mov" controls></video>
+</div> -->
+
+<script src="../../script/finalbuild-script.js"></script>
+</body>
+</html>

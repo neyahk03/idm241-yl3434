@@ -1,0 +1,130 @@
+@font-face {
+    font-family: poppins-light;
+    src: url(../fonts/poppins-light-webfont.woff) format(woff),
+        url(../fonts/poppins-light-webfont.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../fonts/poppins-regular-webfont.woff) format(woff),
+        url(../fonts/poppins-regular-webfont.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../fonts/poppins-bold-webfont.woff) format(woff),
+        url(../fonts/poppins-bold-webfont.woff2) format(woff2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --color-cashew: #FAF1E5;
+    --color-orange: #ff640a; 
+    --color-kale: #003D29;
+    --color-lime: #0aad0a; 
+
+    --background-color: #27292b;
+    --foreground-color: var(--color-kale);
+}
+
+body {
+    background-color: var(--background-color);
+    color: #fff;
+    font-family: poppins-regular;
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+img {
+    margin: 0 auto;
+}
+
+.logo {
+    object-fit: scale-down;
+    display: flex;
+    float: center;
+    height: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-family: poppins-bold;
+}
+
+.link {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-orange);
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 3px solid var(--color-orange);
+    /* margin: 10px; */
+    padding: 30px;
+    border-radius: 20px;
+
+
+    h3 {
+        color: var(--color-carrot);
+        margin-top: 0;
+        font-family: poppins-bold;
+    }
+
+    p {
+        font-family: poppins-regular;
+        margin-bottom: 0;
+        color: var(--color-orange)
+    }
+
+    ul {
+        margin-top: 0.5rem;
+    }
+
+    strong {
+        text-decoration: underline;
+    }
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 var(--color-orange), 0 6px 20px 0 var(--color-orange);
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    /* .image {
+        video {
+            width: 90vw;
+        }
+    } */
+}
