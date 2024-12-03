@@ -175,7 +175,7 @@ html {
 }
 
 #bookmark {
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
 }
 
 #bookmark:hover{
@@ -208,10 +208,18 @@ html {
     padding: 1rem;
     text-align: center;
 
-    transition: transform 0.2s ease;
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s; 
 
-    display: none;
 
+}
+
+.model-box.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease; 
 
 }
 
@@ -225,12 +233,14 @@ html {
     height: 25px;
     cursor: pointer;
     margin: 0;
+    transition: transform 0.2s ease;
+
 
 }
 
 #close:hover {
-    transform: scale(1.1);
-    transition: transform 0.2 ease;
+    transform: scale(1.2);
+
 }
 
 .add-container {
@@ -264,6 +274,33 @@ input {
     border: none;
     border-bottom: 1px solid white;
 
+}
+
+/* star */
+.star {
+    position: absolute;
+    transform: translateX(-100px);
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/star-icon.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 90;
+    pointer-events: none;
+    animation: fall 2s ease forwards;
+}
+
+
+    /* Animation for falling star */
+    @keyframes fall {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 500px) scale(0.5);
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {

@@ -1,6 +1,8 @@
 const flipCard = document.getElementById('flip-card');
 const play = document.getElementById('play');
 const bookmark = document.getElementById('bookmark');
+const posterBack = document.querySelector('.poster-back');
+
 
 flipCard.addEventListener('click', (event) => {
   if (!event.target.closest('#play')) {
@@ -10,8 +12,36 @@ flipCard.addEventListener('click', (event) => {
 
 play.addEventListener('mouseup', (event) => {
   event.stopPropagation(); 
-  window.open('https://www.crunchyroll.com/watch/GR3VWXP96/im-luffy-the-man-whos-gonna-be-king-of-the-pirates', '_blank');
+
+  for (let i = 0; i < 10; i++) { // Adjust the number of stars as needed
+    const star = document.createElement('div');
+    star.classList.add('star');
+
+    // Randomize the horizontal position and delay
+    const randomLeft = Math.random() * 100; // Horizontal position as percentage
+    const randomDelay = Math.random() * 0.5; // Delay for animation
+
+    star.style.left = `${randomLeft}%`; // Random horizontal position
+    star.style.animationDelay = `${randomDelay}s`; // Random delay
+
+    // Append the star to the poster container
+    posterBack.appendChild(star);
+
+    // Remove the star after the animation ends
+    star.addEventListener('animationend', () => {
+      star.remove();
+    });
+  }
+
+  // Open the link after the animation completes
+  setTimeout(() => {
+    window.open('https://www.crunchyroll.com/watch/GR3VWXP96/im-luffy-the-man-whos-gonna-be-king-of-the-pirates', '_blank');
+  }, 2000); // Match the longest animation duration
 });
+
+
+  
+
 
 const outlineBookmark = "bookmark-2.svg";
 const filledBookmark = "bookmark-fill-icon.png";
@@ -36,10 +66,11 @@ const modelbox = document.querySelector('.model-box');
 
 add.addEventListener('click', (event) => {
   event.stopPropagation();
-  modelbox.style.display = 'block';
+  modelbox.classList.add('visible');
 });
 
 closeButton.addEventListener('click', (event) => {
-    modelbox.style.display = 'none';
-});
+    modelbox.classList.remove('visible');
+
+  });
 

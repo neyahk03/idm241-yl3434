@@ -93,7 +93,7 @@ a:hover {
     p {
         font-family: poppins-regular;
         margin-bottom: 0;
-        color: var(--color-orange)
+        color: var(--color-orange);
     }
 
     ul {
