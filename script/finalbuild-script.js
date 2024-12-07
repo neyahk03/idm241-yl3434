@@ -1,11 +1,14 @@
-const flipCard = document.getElementById('flip-card');
-const play = document.getElementById('play');
-const bookmark = document.getElementById('bookmark');
+const flipCard = document.getElementById('flip-card-1');
+const play = document.getElementById('play-1');
+const bookmark = document.getElementById('bookmark-1');
 const posterBack = document.querySelector('.poster-back');
+const add = document.getElementById('plus-1');
+const closeButton = document.getElementById('close');
+const modelbox = document.querySelector('.model-box');
 
 
 flipCard.addEventListener('click', (event) => {
-  if (!event.target.closest('#play')) {
+  if (!event.target.closest('#play-1')) {
     flipCard.classList.toggle('flipped');
   }
 });
@@ -59,9 +62,6 @@ bookmark.addEventListener('click', (event) => {
   }
 });
 
-const add = document.getElementById('plus');
-const closeButton = document.getElementById('close');
-const modelbox = document.querySelector('.model-box');
 
 
 add.addEventListener('click', (event) => {
