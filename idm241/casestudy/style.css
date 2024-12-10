@@ -50,6 +50,12 @@ img {
     height: 100px;
 }
 
+.title {
+    text-align: center;
+    font-family: poppins-bold;
+    font-size: 4rem;
+}
+
 h1 {
     text-align: center;
     color: #fff;
